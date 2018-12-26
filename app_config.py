@@ -1,0 +1,9 @@
+import os
+import random
+
+CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL')
+CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND')
+CELERY_TASK_RESULT_EXPIRES=os.environ.get('CELERY_TASK_RESULT_EXPIRES')
+UPLOAD_FOLDER = 'data/upload'
+CROPPED_FOLDER = 'data/cropped'
+MAX_CONTENT_LENGTH = 16 * 1024 * 1024

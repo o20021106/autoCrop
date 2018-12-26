@@ -20,19 +20,20 @@ The overall process of prediction thus goes as follows:
 
 # Traing
 
-## Download training data
-1. Goes to [SALCON](http://salicon.net/challenge-2017/)'s website, and download the saliency data. Then copy and paste the related paths to ```auto_crop/models/model_config.py```
+### Download training data
+1. Go to [SALCON](http://salicon.net/challenge-2017/)'s website, and download the saliency data. Then copy and paste the related paths to ```auto_crop/models/model_config.py```
 2. Refer to [Yi-Ling Chen](https://github.com/yiling-chen/flickr-cropping-dataset)'s github for downaloading data for ranking model training.
 
-## Download SVM-rank
-Follow the instruction in [this page](https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html) on how to download and build SVM-rank.
-Append path to the binary to environment. 
+### Download SVM-rank
+Follow the instructions on [this page](https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html) on how for downloading and building SVM-rank.
+Append the path to the binary to environment. 
  
-## Train ranking model
+### Train ranking model
 ```python ranking_model_train.py -f flickr_dir```
+
 Change filckr_dir to the path to your clone of flickr-cropping-dataset.
 
-## Train saliency model
+### Train saliency model
 ```python saliency_train.py```
 
 

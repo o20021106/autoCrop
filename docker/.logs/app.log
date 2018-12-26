@@ -1,0 +1,2 @@
+2018-12-26 09:40:02,917 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-12-26 09:40:24,035 - werkzeug - INFO - 10.255.0.2 - - [26/Dec/2018 09:40:24] "[37mGET /upload HTTP/1.1[0m" 200 -

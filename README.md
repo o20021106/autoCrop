@@ -70,4 +70,4 @@ $ sudo docker stack deploy -c docker/docker-compose.yml autoCrop
 | Saliency Map | Bounding Box | Crop |
 | ------------ | ------------ | ---- |
 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_s.jpg?token=ASVZAYap2lt0k5qIqRqGjuTZuFMT1dTsks5cLbQmwA%3D%3D"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_b.jpg?token=ASVZATYxAOQfvh3lGyfnzaL4JidPk_rNks5cLbRnwA%3D%3D"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1.jpg?token=ASVZAUhzlz26xvAb7E2kVWF8yyHMUJ1xks5cLbSpwA%3D%3D"> |
-
+| 1:1 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_s.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_b.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2.jpg"> |

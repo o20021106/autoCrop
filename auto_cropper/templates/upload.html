@@ -18,7 +18,7 @@
     Finally, a SVM Rank model predicts the ranking based on vgg extracted features.
     The crop with highest rank score will be the final prediction.
   </p>
-  <form id = "picture" action="/upload" method="post" enctype="multipart/form-data">
+  <form id = "picture" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label>Select an image</label>
       <input type="file" name="pic" accept="image/*" class="form-control">
@@ -64,7 +64,6 @@
       });
       $("#image_bounding_box").on("error", function () {
         $("#image_bounding_box").css("display","none") 
-        console.log('in box')
         setTimeout(function(){ $("#image_bounding_box").attr('src', imgURLB+"?t="+new Date()); }, 5000);
       });
       $.ajax({
@@ -75,7 +74,6 @@
        processData: false
      })
       .done(function(response){
-       console.log(response)
        if ("imgURL" in response){
          imgURL = response["imgURL"]
          imgURLS = response["imgURLS"]
@@ -90,7 +88,6 @@
          $("#message").css("visibility","visible")
        }
        else if ("error" in response){
-         console.log(response["error"])
          $("#message").text(response["error"])
          $("#message").removeClass("alert-info")
          $("#message").removeClass("alert-success")

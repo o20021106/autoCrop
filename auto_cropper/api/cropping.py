@@ -10,6 +10,7 @@ from base64 import b64encode
 from datetime import datetime
 import logging
 import os
+from urllib.parse import urlparse
 
 RESIZE_WIDTH = int(os.environ.get('RESIZE_WIDTH'))
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
@@ -28,7 +29,7 @@ def cropped_file(filename):
     return send_from_directory(uploads, filename)
 
 
-@cp.route('/upload', methods=['GET', 'POST'])
+@cp.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the form part
@@ -85,10 +86,12 @@ def upload_file():
             logging.debug(f'cropped_filename: {cropped_filename}, file_extention: {file_extention}')
             img = crop.delay(img.tolist(), cropped_filename, file_extention,
                              app.config['CROPPED_FOLDER'], (width,height))
-
-            return jsonify({'imgURLS':f'http://192.168.21.103:{os.environ.get("PORT")}/cropped/{cropped_filename}_s.{file_extention}',
-                            'imgURLB':f'http://192.168.21.103:{os.environ.get("PORT")}/cropped/{cropped_filename}_b.{file_extention}',
-                            'imgURL':f'http://192.168.21.103:{os.environ.get("PORT")}/cropped/{cropped_filename}.{file_extention}'})
+            host = os.environ.get('HOST_IP')
+            scheme = urlparse(request.url).scheme
+            port = ':'+os.environ.get('PORT') if os.environ.get('FOREMAN') == 'True' else ''         
+            return jsonify({'imgURLS':f'http://{host}{port}/cropped/{cropped_filename}_s.{file_extention}',
+                            'imgURLB':f'http://{host}{port}/cropped/{cropped_filename}_b.{file_extention}',
+                            'imgURL':f'http://{host}{port}/cropped/{cropped_filename}.{file_extention}'})
 
     return render_template('upload.html')
 

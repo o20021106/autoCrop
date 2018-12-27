@@ -25,15 +25,15 @@ The overall process of prediction thus goes as follows:
 2. Refer to [Yi-Ling Chen](https://github.com/yiling-chen/flickr-cropping-dataset)'s github for downloading data for ranking model training.
 
 ### Download SVM-rank
-Follow the instructions on [this page](https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html) on how for downloading and building SVM-rank.
+Follow the instructions on [this page](https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html) for downloading and building SVM-rank.
 Append the path to the binary to PATH.
 
-### Train ranking model
+### Ranking Model Training
 ```$ python ranking_model_train.py -f flickr_dir```
 
 Change filckr_dir to the path to your clone of flickr-cropping-dataset.
 
-### Train saliency model
+### Saliency model Training
 ```$ python saliency_train.py```
 
 

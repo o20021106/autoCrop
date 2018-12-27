@@ -1,0 +1,25 @@
+version: "3"
+services:
+    web:
+        container_name: web
+        image: autocrop:latest 
+        command: gunicorn -c gunicorn_config.py wsgi 
+        env_file: autoCrop.env
+        expose:
+            - "5000"
+        ports:
+            - "5000:5000"
+        volumes:
+            - /var/log/autoCrop_web:/usr/src/app/logs/
+            - /usr/temp/cropped:/usr/src/app/data/cropped
+
+    worker:
+        container_name: worker
+        image: autocrop:latest
+        command: celery worker -A auto_cropper.tasks --loglevel=debug
+        env_file: autoCrop.env
+        volumes:
+            - /var/log/autoCrop_worker:/usr/src/app/logs
+            - /usr/temp/cropped:/usr/src/app/data/cropped
+    redis:
+        image: "redis:alpine"

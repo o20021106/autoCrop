@@ -1,0 +1,26 @@
+version: "3"
+services:
+    web:
+        container_name: web
+        image: breaktimeinc/textcls:latest 
+        command: gunicorn -b 0.0.0.0:5000 -c config/gunicorn.py wsgi 
+        env_file: textCLS.env
+        expose:
+            - "5000"
+        ports:
+            - "5000:5000"
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "50m"
+        restart: always
+    worker:
+        container_name: worker
+        image: breaktimeinc/textcls:latest
+        command: celery worker -A textClassification.flask_celery -l info
+        env_file: textCLS.env
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "50m"
+        restart: always

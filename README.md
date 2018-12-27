@@ -38,3 +38,7 @@ Change filckr_dir to the path to your clone of flickr-cropping-dataset.
 
 
 # Prediction API
+
+mkdir /var/log/autoCrop_web/
+mkdir /var/log/autoCrop_worker/
+mkdir /usr/temp/cropped

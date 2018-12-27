@@ -1,0 +1,6 @@
+2018-12-26 20:09:13,882 - root - INFO - (width, height): (1, 1)
+2018-12-26 20:09:13,883 - root - DEBUG - filename: pexels-photo-109919.jpeg
+2018-12-26 20:09:14,651 - root - DEBUG - cropped_filename: cropped_1545826154.651344_pexels-photo-109919, file_extention: jpeg
+2018-12-26 20:14:01,118 - root - INFO - (width, height): (1, 2)
+2018-12-26 20:14:01,118 - root - DEBUG - filename: pexels-photo-917494.jpeg
+2018-12-26 20:14:01,914 - root - DEBUG - cropped_filename: cropped_1545826441.914556_pexels-photo-917494, file_extention: jpeg

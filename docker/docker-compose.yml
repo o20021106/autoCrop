@@ -3,7 +3,7 @@ services:
     web:
         container_name: web
         image: autocrop:latest 
-        command: python wsgi.py 
+        command: gunicorn -c gunicorn_config.py wsgi 
         env_file: autoCrop.env
         expose:
             - "5000"

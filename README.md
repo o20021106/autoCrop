@@ -67,7 +67,18 @@ $ sudo docker stack deploy -c docker/docker-compose.yml autoCrop
 #Demo
 
 
-| Saliency Map | Bounding Box | Crop |
-| ------------ | ------------ | ---- |
-| <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_s.jpg?token=ASVZAYap2lt0k5qIqRqGjuTZuFMT1dTsks5cLbQmwA%3D%3D"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_b.jpg?token=ASVZATYxAOQfvh3lGyfnzaL4JidPk_rNks5cLbRnwA%3D%3D"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1.jpg?token=ASVZAUhzlz26xvAb7E2kVWF8yyHMUJ1xks5cLbSpwA%3D%3D"> |
-| 1:1 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_s.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_b.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2.jpg"> |
+| Ratio | Saliency Map | Bounding Box | Crop |
+| ----- |------------ | ------------ | ---- |
+| 1:1 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_s.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_b.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1.jpg"> |
+| 1:1 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/3_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/3_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/3.jpeg"> |
+| 1:1 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/4_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/4_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/4.jpeg"> |
+| 4:3 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_4to3_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_4to3_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/2_4to3.jpeg"> |
+| 4:3 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/7_4to3_s.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/7_4to3_b.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/7_4to3.jpg"> |
+| 4:3 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/10_4to3_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/10_4to3_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/10_4to3.jpeg"> |
+| 16:9 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9.jpeg"> |
+| 16:9 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/6_16to9.jpeg"> |
+| 16:9 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/8_9to16_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/8_9to16_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/8_9to16.jpeg"> |
+| 9:16 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/9_9to16_s.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/9_9to16_b.jpeg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/9_9to16.jpeg"> |
+| 3:4 | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/5_3to4_s.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/5_3to4_b.jpg"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/5_3to4.jpg"> |
+
+

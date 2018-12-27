@@ -29,16 +29,37 @@ Follow the instructions on [this page](https://www.cs.cornell.edu/people/tj/svm_
 Append the path to the binary to environment. 
  
 ### Train ranking model
-```python ranking_model_train.py -f flickr_dir```
+```$ python ranking_model_train.py -f flickr_dir```
 
 Change filckr_dir to the path to your clone of flickr-cropping-dataset.
 
 ### Train saliency model
-```python saliency_train.py```
+```$ python saliency_train.py```
 
 
 # Prediction API
 
-mkdir /var/log/autoCrop_web/
-mkdir /var/log/autoCrop_worker/
-mkdir /usr/temp/cropped
+You try a demo of this API [here](http://35.229.246.22/).
+
+1. Install and start NGINX. Replace nginx.conf with nginx.conf in this repo.
+2. Pull docker from ```$ sudo docker pull o20021106/autocrop:latest```
+3. Create directories for docker volumes
+
+```
+
+$ sudo mkdir /var/log/autoCrop_web/
+
+$ sudo mkdir /var/log/autoCrop_worker/
+
+$ sudo mkdir /usr/temp/cropped
+
+``` 
+4. Run docker
+
+```
+$ sudo docker swarm init 
+ 
+$ sudo docker stack deploy -c docker/docker-compose.yml autoCrop
+```
+5. Go to http://your-host-name/ to test the API.
+

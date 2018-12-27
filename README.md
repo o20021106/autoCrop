@@ -65,7 +65,12 @@ $ sudo docker stack deploy -c docker/docker-compose.yml autoCrop
 
 
 #Demo
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 | Saliency Map | Bounding Box | Crop |
 | ------------ | ------------ | ---- |
-| <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_s.jpg?token=ASVZAYap2lt0k5qIqRqGjuTZuFMT1dTsks5cLbQmwA%3D%3D" width="200"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_b.jpg?token=ASVZATYxAOQfvh3lGyfnzaL4JidPk_rNks5cLbRnwA%3D%3D" width="20%"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1.jpg?token=ASVZAUhzlz26xvAb7E2kVWF8yyHMUJ1xks5cLbSpwA%3D%3D width="200"> |
+| <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_s.jpg?token=ASVZAYap2lt0k5qIqRqGjuTZuFMT1dTsks5cLbQmwA%3D%3D" width="200"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1_b.jpg?token=ASVZATYxAOQfvh3lGyfnzaL4JidPk_rNks5cLbRnwA%3D%3D" width="20%"> | <img src="https://raw.githubusercontent.com/o20021106/autoCrop/master/data/images/1.jpg?token=ASVZAUhzlz26xvAb7E2kVWF8yyHMUJ1xks5cLbSpwA%3D%3D" width="200"> |
 
